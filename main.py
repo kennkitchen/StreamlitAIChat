@@ -1,7 +1,8 @@
-import sys
-import streamlit as st
 import ollama
+import streamlit as st
+
 from modules.yolama import OllamaConversationManager as yolama
+
 
 def fetch_available_models() -> list:
     """Queries the local Ollama server for a list of available models."""
